@@ -29,7 +29,7 @@ It provides doctypes for handling **classes, students, parents, teachers, subjec
 - Work in Progress 🚧 (not feature-complete yet)
 
 ---
-## 🚀 Current Status
+##  Current Status
 
 - Backend only (no frontend).
 - Contains:
