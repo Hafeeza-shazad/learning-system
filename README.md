@@ -1,33 +1,54 @@
-### Programming App
+# Programming App
 
-js and python 
+A **Frappe backend application** designed for managing **primary school records**.  
+It provides doctypes for handling **classes, students, parents, teachers, subjects, quizzes, assignments, and content**, with custom APIs to return only necessary data.
 
-### Installation
+---
+
+## Features
+
+- Doctypes for:
+  - Class
+  - Student
+  - Parent
+  - Teacher
+  - Subjects
+  - Class Enrollment
+  - Subject Enrollment
+  - Content
+  - Subject Content
+  - Quiz & Questions
+  - Assignment
+  - Student–Parent relations
+- Custom API (`api.py`) with lightweight responses:
+  - Only essential fields are returned instead of full Frappe documents.
+  - Reduces unnecessary payload to avoid overload.
+- Backend-only:
+  - Database structure
+  - API endpoints for integration
+- Work in Progress 🚧 (not feature-complete yet)
+
+---
+
+## Installation
 
 You can install this app using the [bench](https://github.com/frappe/bench) CLI:
 
 ```bash
 cd $PATH_TO_YOUR_BENCH
-bench get-app $URL_OF_THIS_REPO --branch develop
+bench get-app https://github.com/Hafeeza-shazad/Primary-school-learning-system.git
 bench install-app programming_app
-```
 
-### Contributing
+##  Current Status
 
-This app uses `pre-commit` for code formatting and linting. Please [install pre-commit](https://pre-commit.com/#installation) and enable it for this repository:
+Backend only (no frontend).
 
-```bash
-cd apps/programming_app
-pre-commit install
-```
+Contains:
 
-Pre-commit is configured to use the following tools for checking and formatting your code:
+Doctypes
 
-- ruff
-- eslint
-- prettier
-- pyupgrade
+Database schema
 
-### License
+API methods (api.py)
 
-mit
+Still under development, more features and integrations coming soon.
