@@ -1,0 +1,94 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "C.#######",
+ "creation": "2025-08-15 12:24:25.540306",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "topic_name",
+  "order",
+  "column_break_mqpi",
+  "subject",
+  "class",
+  "section_break_tx5a",
+  "content"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_tx5a",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "topic_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Topic Name",
+   "reqd": 1
+  },
+  {
+   "description": "Order of the topics ie 1,2,3...",
+   "fieldname": "order",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Order",
+   "reqd": 1
+  },
+  {
+   "fieldname": "subject",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Subject",
+   "options": "Subject",
+   "reqd": 1
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Class",
+   "options": "Class",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_mqpi",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "content",
+   "fieldtype": "Table",
+   "label": "Content",
+   "options": "Content"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-15 12:43:49.928550",
+ "modified_by": "Administrator",
+ "module": "Programming App",
+ "name": "Subject Content",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "topic_name",
+ "track_changes": 1
+}

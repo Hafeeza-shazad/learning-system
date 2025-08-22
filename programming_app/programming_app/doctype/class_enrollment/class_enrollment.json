@@ -1,0 +1,92 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "EN.#####",
+ "creation": "2025-08-15 11:22:03.631068",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "student",
+  "class",
+  "column_break_rylg",
+  "enrollment_date",
+  "academic_year",
+  "section_break_9wl2",
+  "subjects_selected"
+ ],
+ "fields": [
+  {
+   "fieldname": "section_break_9wl2",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "student",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Student",
+   "options": "Student",
+   "reqd": 1
+  },
+  {
+   "fieldname": "class",
+   "fieldtype": "Link",
+   "in_list_view": 1,
+   "label": "Class",
+   "options": "Class",
+   "reqd": 1
+  },
+  {
+   "default": "Today",
+   "fieldname": "enrollment_date",
+   "fieldtype": "Date",
+   "label": "Enrollment Date"
+  },
+  {
+   "fieldname": "subjects_selected",
+   "fieldtype": "Table",
+   "label": "Subjects Selected",
+   "options": "Subject Enrollment"
+  },
+  {
+   "fieldname": "column_break_rylg",
+   "fieldtype": "Column Break"
+  },
+  {
+   "description": "2024, 2025...",
+   "fieldname": "academic_year",
+   "fieldtype": "Int",
+   "label": "Academic Year"
+  }
+ ],
+ "grid_page_length": 50,
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2025-08-19 15:49:48.544940",
+ "modified_by": "Administrator",
+ "module": "Programming App",
+ "name": "Class Enrollment",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "row_format": "Dynamic",
+ "search_fields": "student",
+ "show_title_field_in_link": 1,
+ "sort_field": "creation",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "student",
+ "track_changes": 1
+}
