@@ -39,6 +39,8 @@ cd $PATH_TO_YOUR_BENCH
 bench get-app https://github.com/Hafeeza-shazad/Primary-school-learning-system.git
 bench install-app programming_app
 
+---
+
 ##  Current Status
 
 Backend only (no frontend).
